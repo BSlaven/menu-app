@@ -1,6 +1,11 @@
-const Categories = () => {
+import Category from '../Category/Category';
+
+const Categories = ({ categories }) => {
+  
   return (
-    <div>Categories</div>
+    <div>
+      {categories.map(category => <Category category={category} />)}
+    </div>
   )
 }
 

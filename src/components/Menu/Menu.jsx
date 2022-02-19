@@ -6,11 +6,12 @@ import Categories from '../Categories/Categories'
 const Menu = () => {
 
   const [ myMenu, setMyMenu ] = useState(menu);
+  const categories = menu.map(elem => elem.category);
   
   return (
     <div className={classes.menu}>
       <h2>Make your pick</h2>
-      <Categories />
+      <Categories categories={categories} />
     </div>
   )
 }
