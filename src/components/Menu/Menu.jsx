@@ -6,7 +6,7 @@ import Categories from '../Categories/Categories'
 const Menu = () => {
 
   const [ myMenu, setMyMenu ] = useState(menu);
-  const categories = menu.map(elem => elem.category);
+  const categories = [...new Set(menu.map(elem => elem.category))];
   
   return (
     <div className={classes.menu}>
