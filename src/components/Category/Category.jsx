@@ -1,6 +1,8 @@
+import classes from './Category.module.css';
+
 const Category = ({ category }) => {
   return (
-    <button>
+    <button className={classes.category}>
       {category}
     </button>
   )
