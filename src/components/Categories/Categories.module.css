@@ -1,0 +1,15 @@
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .categories {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
