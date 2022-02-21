@@ -1,5 +1,16 @@
 .category {
   border: none;
+  border-radius: 3px;
   padding: 0.5rem 1rem;
   margin: 0 1rem;
+  width: 150px;
+  outline: 2px solid rgba(128, 0, 0, 0.466);
+  color: maroon;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.category:is(:focus, :hover) {
+  outline-color: maroon;
 }
