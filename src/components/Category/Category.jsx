@@ -4,7 +4,6 @@ const Category = ({ category, click }) => {
 
   const categoryClickHandler = () => {
     click(category);
-    console.log('kliknuo si na kategoriju: ', category);
   }
   
   return (
