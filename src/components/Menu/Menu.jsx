@@ -14,6 +14,7 @@ const Menu = () => {
   }
   
   useEffect(() => {
+    console.log(filterCategory)
     if(!filterCategory) {
       setMyMenu(menu);
     } else {
@@ -26,7 +27,7 @@ const Menu = () => {
     <div className={classes.menu}>
       <h2>Make your pick</h2>
       <Categories categories={categories} click={filterMenu} />
-      {myMenu && myMenu.map(item => <p>{item.title}</p> ) }
+      {myMenu && myMenu.map(item => <p>{item.title}</p>)}
     </div>
   )
 }
