@@ -14,7 +14,6 @@ const Menu = () => {
   }
   
   useEffect(() => {
-    console.log(filterCategory)
     if(!filterCategory) {
       setMyMenu(menu);
     } else {
