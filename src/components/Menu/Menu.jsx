@@ -7,11 +7,16 @@ const Menu = () => {
 
   const [ myMenu, setMyMenu ] = useState(menu);
   const categories = [...new Set(menu.map(elem => elem.category))];
+
+  const filterMenu = category => {
+    const newMenu = [...myMenu].filter(elem => elem.category === category);
+    setMyMenu(newMenu);
+  }
   
   return (
     <div className={classes.menu}>
       <h2>Make your pick</h2>
-      <Categories categories={categories} />
+      <Categories categories={categories} click={filterMenu} />
     </div>
   )
 }
