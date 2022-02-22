@@ -1,9 +1,9 @@
 import classes from './MenuItem.module.css';
 
-const MenuItem = () => {
+const MenuItem = ({ item }) => {
   return (
     <div className={classes.item}>
-      MenuItem
+      <img src={item.img} alt={item.title} />
     </div>
   )
 }

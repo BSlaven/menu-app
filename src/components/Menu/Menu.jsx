@@ -27,7 +27,7 @@ const Menu = () => {
     <div className={classes.menu}>
       <h2>Make your pick</h2>
       <Categories categories={categories} click={filterMenu} />
-      {myMenu && myMenu.map(item => <MenuItem key={item.id}item={item}>{item.title}</MenuItem>)}
+      {myMenu && myMenu.map(item => <MenuItem key={item.id} item={item}>{item.title}</MenuItem>)}
     </div>
   )
 }
