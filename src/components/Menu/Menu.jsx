@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import classes from './Menu.module.css';
 import menu from '../../data';
-import Categories from '../Categories/Categories'
+import Categories from '../Categories/Categories';
+import MenuItem from '../MenuItem/MenuItem';
 
 const Menu = () => {
 
@@ -26,7 +27,7 @@ const Menu = () => {
     <div className={classes.menu}>
       <h2>Make your pick</h2>
       <Categories categories={categories} click={filterMenu} />
-      {myMenu && myMenu.map(item => <p>{item.title}</p>)}
+      {myMenu && myMenu.map(item => <MenuItem key={item.id} item={item}>{item.title}</MenuItem>)}
     </div>
   )
 }

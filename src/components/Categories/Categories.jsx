@@ -6,7 +6,7 @@ const Categories = ({ categories, click }) => {
   return (
     <div className={classes.categories}>
       <button className={classes.category} onClick={() => click('')} >All</button>
-      {categories.map(category => <Category click={click} key={category.id} category={category} />)}
+      {categories.map(category => <Category click={click} key={category} category={category} />)}
     </div>
   )
 }
