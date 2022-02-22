@@ -7,8 +7,12 @@ const MenuItem = ({ item }) => {
         <img className={classes.image} src={item.img} alt={item.title} />
       </div>
       <div className={classes.contentContainer}>
-        <p>{item.title} <span>{item.price}</span></p>
-        <p>{item.desc}</p>
+        <p className={classes.title}>{item.title}
+          <span className={classes.price}>
+            {item.price}
+          </span>
+        </p>
+        <p className={classes.description}>{item.desc}</p>
       </div>
     </div>
   )
