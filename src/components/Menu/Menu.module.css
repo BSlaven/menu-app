@@ -1,13 +1,12 @@
 .menu {
-  text-align: center;
+  width: 80%;
   padding: 2rem;
+  justify-self: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
-@media screen and (min-width: 800px) {
-  .menu {
-    grid-template-columns: 1fr 1fr;
-  }
+.menu * {
+  margin: 0 auto;
 }

@@ -6,6 +6,8 @@
   max-width: 500px;
   display: flex;
   margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .imageContainer {
