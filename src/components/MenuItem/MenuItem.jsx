@@ -7,7 +7,8 @@ const MenuItem = ({ item }) => {
         <img className={classes.image} src={item.img} alt={item.title} />
       </div>
       <div className={classes.contentContainer}>
-        <p className={classes.title}>{item.title}
+        <p className={classes.title}>
+          <span>{item.title}</span>
           <span className={classes.price}>
             {item.price}
           </span>
