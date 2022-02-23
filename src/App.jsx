@@ -5,6 +5,8 @@ function App() {
 
   return (
     <div className={classes.App}>
+      <h2>Make your pick</h2>
+      <Categories categories={categories} click={filterMenu} />
       <Menu />
     </div>
   )
