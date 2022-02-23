@@ -1,4 +1,14 @@
 .menu {
   text-align: center;
-  padding-top: 2rem;
+  /* margin: 0 auto; */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
 }
